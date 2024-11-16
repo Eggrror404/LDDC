@@ -440,6 +440,11 @@
              <string>ASS</string>
             </property>
            </item>
+           <item>
+            <property name="text">
+             <string>LRC(maru.re)</string>
+            </property>
+           </item>
           </widget>
          </item>
         </layout>

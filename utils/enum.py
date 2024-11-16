@@ -30,10 +30,11 @@ class LyricsFormat(Enum):
     ENHANCEDLRC = 2
     SRT = 3
     ASS = 4
-    QRC = 5
-    KRC = 6
-    YRC = 7
-    JSON = 8
+    MARU = 5
+    QRC = 6
+    KRC = 7
+    YRC = 8
+    JSON = 9
 
 
 class SearchType(Enum):

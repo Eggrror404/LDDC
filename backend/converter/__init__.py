@@ -11,6 +11,7 @@ from utils.logger import logger
 from .ass import ass_converter
 from .lrc import lrc_converter
 from .srt import srt_converter
+from .lrc_maru import lrc_maru_converter
 
 
 def convert2(lyrics: Lyrics,
@@ -70,6 +71,8 @@ def convert2(lyrics: Lyrics,
             return srt_converter(lyrics_dict, langs_mapping, langs_order, lyrics.duration)
         case LyricsFormat.ASS:
             return ass_converter(lyrics, lyrics_dict, langs_mapping, langs_order)
+        case LyricsFormat.MARU:
+            return lrc_maru_converter(lyrics.tags, lyrics_dict, langs_mapping, langs_order)
 
     msg = f"不支持的歌词格式: {lyrics_format}"
     raise NotImplementedError(msg)

@@ -270,6 +270,7 @@ class Ui_search_base:
         self.lyricsformat_comboBox.addItem("")
         self.lyricsformat_comboBox.addItem("")
         self.lyricsformat_comboBox.addItem("")
+        self.lyricsformat_comboBox.addItem("")
         self.lyricsformat_comboBox.setObjectName("lyricsformat_comboBox")
 
         self.horizontalLayout_9.addWidget(self.lyricsformat_comboBox)
@@ -324,5 +325,6 @@ class Ui_search_base:
         self.lyricsformat_comboBox.setItemText(2, QCoreApplication.translate("search_base", "\u589e\u5f3a\u578bLRC(ESLyric)", None))
         self.lyricsformat_comboBox.setItemText(3, QCoreApplication.translate("search_base", "SRT", None))
         self.lyricsformat_comboBox.setItemText(4, QCoreApplication.translate("search_base", "ASS", None))
+        self.lyricsformat_comboBox.setItemText(5, QCoreApplication.translate("search_base", "LRC(maru.re)", None))
 
     # retranslateUi
